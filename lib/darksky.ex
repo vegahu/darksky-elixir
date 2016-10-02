@@ -1,0 +1,2 @@
+defmodule Darksky do
+end
