@@ -14,8 +14,8 @@ Hour-by-hour and day-by-day observations going back decades`
 
 There are two functions available:
 
-- forecast/3
-- timemachine/4
+- forecast/4
+- timemachine/5
 
 They need the API key, latitude, longitude, and time only for timemachine function.
 
