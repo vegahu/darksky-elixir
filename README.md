@@ -21,7 +21,7 @@ They need the API key, latitude, longitude, and time only for timemachine functi
 
 Both have optional parameters, you have to put them in a map, for example:
 
-`forecast("fas987sd9fs987fsa", 12,1234, -5,4321, %{lang: "es", units: "si"})`
+`forecast("YOUR-API-KEY", 12,1234, -5,4321, %{lang: "es", units: "si"})`
 
 You can check the full list of options here:
 
