@@ -32,6 +32,6 @@ Both functions returns a nested map, you can see samples of the output in the fi
 
 ## Examples
 
-`Darksky.forecast(43.545, -5.6626, "YOUR-API-KEY", %{lang: "es", units: "si"})`
+`Darksky.forecast("YOUR-API-KEY", 43.545, -5.6626, %{lang: "es", units: "si"})`
 
-`Darksky.timemachine(43.545, -5.6626, 1475430147, "YOUR-API-KEY",  %{units: "si", lang: "es"})`
+`Darksky.timemachine("YOUR-API-KEY", 43.545, -5.6626, 1475430147, %{units: "si", lang: "es"})`
