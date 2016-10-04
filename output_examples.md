@@ -1,4 +1,5 @@
 iex(1)> Darksky.forecast(43.545, -5.6626, "YOUR-API-KEY", %{lang: "es", units: "si"})
+```elixir
 {:ok,
  %{"currently" => %{"apparentTemperature" => 19.98, "cloudCover" => 0.8,
      "dewPoint" => 15.53, "humidity" => 0.76, "icon" => "partly-cloudy-day",
@@ -533,3 +534,4 @@ iex(1)> Darksky.forecast(43.545, -5.6626, "YOUR-API-KEY", %{lang: "es", units: "
         "summary" => "Parcialmente nublado comenzando en la noche, continuando hasta en la mañana."},
       "latitude" => 43.545, "longitude" => -5.6626, "offset" => 2,
       "timezone" => "Europe/Madrid"}}
+      ```
