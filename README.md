@@ -25,8 +25,8 @@ Both have optional parameters, you have to put them in a map, for example:
 
 You can check the full list of options here:
 
-- [forecast/3 parameters](https://darksky.net/dev/docs/forecast)
-- [timemachine/4 parameters](https://darksky.net/dev/docs/time-machine)
+- [forecast/4 parameters](https://darksky.net/dev/docs/forecast)
+- [timemachine/5 parameters](https://darksky.net/dev/docs/time-machine)
 
 Both functions returns a nested map, you can see samples of the output in the file output_examples.md.
 
