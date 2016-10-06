@@ -1,22 +1,24 @@
 defmodule Darksky do
 
-@moduledoc """
-This module warps the two requests of Darksky API:
-  - Forescast/4
-  - Timemachine/5
+  @moduledoc """
+  This module warps the two requests of Darksky API:
+    - Forescast/4
+    - Timemachine/5
 
-The result is a map.
+  The result is a map.
 
-A key is needed.
+  A key is needed.
 
-Go to <https://darksky.net/dev/> for a key and documentation.
+  Go to <https://darksky.net/dev/> for a key and documentation.
 """
 
-@doc """
-Returns the current forecast for the next week
+  @base_url "https://api.darksky.net/forecast/"
+
+  @doc """
+  Returns the current forecast for the next week
 """
   def forecast(api_key, latitude, longitude, opts \\ %{}) when is_map(opts) do
-    forecast = HTTPotion.get("https://api.darksky.net/forecast/#{api_key}/#{latitude},#{longitude}", [query: opts])
+    forecast = HTTPotion.get("#{@base_url}#{api_key}/#{latitude},#{longitude}", [query: opts])
     JSON.decode(forecast.body)
   end
 
@@ -24,7 +26,7 @@ Returns the current forecast for the next week
 Returns the observed or forecast weather conditions for a date in the past or future
 """
   def timemachine(api_key, latitude, longitude, date, opts \\ %{}) when is_map(opts) do
-    forecast = HTTPotion.get("https://api.darksky.net/forecast/#{api_key}/#{latitude},#{longitude},#{date}", [query: opts])
+    forecast = HTTPotion.get("#{@base_url}#{api_key}/#{latitude},#{longitude},#{date}", [query: opts])
     JSON.decode(forecast.body)
   end
 
