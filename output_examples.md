@@ -1,5 +1,5 @@
 ```elixir
-iex(1)> Darksky.forecast(43.545, -5.6626, "YOUR-API-KEY", %{lang: "es", units: "si"})
+iex(1)> Darksky.forecast("YOUR-API-KEY", 43.545, -5.6626, %{lang: "es", units: "si"})
 {:ok,
  %{"currently" => %{"apparentTemperature" => 19.98, "cloudCover" => 0.8,
      "dewPoint" => 15.53, "humidity" => 0.76, "icon" => "partly-cloudy-day",
@@ -360,7 +360,7 @@ iex(1)> Darksky.forecast(43.545, -5.6626, "YOUR-API-KEY", %{lang: "es", units: "
 
 
 
-   iex(2)> Darksky.timemachine(43.545, -5.6626, 1475430147, "YOUR-API-KEY",  %{units: "si", lang: "es"})
+   iex(2)> Darksky.timemachine("YOUR-API-KEY", 43.545, -5.6626, 1475430147, %{units: "si", lang: "es"})
    {:ok,
     %{"currently" => %{"apparentTemperature" => 13.67, "cloudCover" => 0.05,
         "dewPoint" => 11.02, "humidity" => 0.8400000000000001,
